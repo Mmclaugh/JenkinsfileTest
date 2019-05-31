@@ -16,7 +16,7 @@ pipeline{
         }
         stage('create-new-cred'){
             steps{
-                createNewCred("test-folder")
+                createNewCred("JenkisfileTest")
             }
         }
         stage('print-final'){

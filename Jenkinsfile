@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('first'){
             steps{
-                echo '''This is a string that i am ${variable}'''
+                echo '''This iss a string that i am ${variable}'''
             }
         }
     }

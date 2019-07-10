@@ -11,6 +11,8 @@ pipeline{
                 ])
                 
                 sh 'ls -l'
+                
+                sh 'ls subdirectory/* -l'
             }
         }
     }

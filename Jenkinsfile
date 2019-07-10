@@ -12,7 +12,7 @@ pipeline{
                 
                 sh 'ls -l'
                 
-                sh 'ls subdirectory/* -l'
+                sh 'ls -l subdirectory/*'
             }
         }
     }

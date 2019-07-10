@@ -10,9 +10,9 @@ pipeline{
                     userRemoteConfigs: scm.userRemoteConfigs
                 ])
                 
-                sh 'ls -l'
+                sh 'ls -la'
                 
-                sh 'ls -l subdirectory/*'
+                sh 'ls -la subdirectory/*'
             }
         }
     }

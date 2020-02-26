@@ -16,7 +16,8 @@ pipeline{
         }
         stage('create-new-cred'){
             steps{
-                createNewCred("JenkisfileTest")
+                //createNewCred("JenkisfileTest")
+                println("This is where we would create a new credential to test with.")
             }
         }
         stage('print-final'){

@@ -10,6 +10,7 @@ pipeline{
         stage('A second stage') { 
             steps { 
                 echo "this is a test"
+                echo "Adding a second output"
             } 
         }
     }

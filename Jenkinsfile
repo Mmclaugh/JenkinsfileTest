@@ -17,12 +17,6 @@ pipeline{
         stage('A second stage') { 
             steps { 
                 echo "this is a test"
-                echo "Adding a second output"
-                echo "This is a new edit on the PR"
-                echo "test"
-                echo "test"
-                echo "scrum test"
-                echo "another merge"
             } 
         }
     }

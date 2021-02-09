@@ -21,6 +21,7 @@ pipeline{
                 echo "This is a new edit on the PR"
                 echo "test"
                 echo "test"
+                echo "scrum test"
             } 
         }
     }

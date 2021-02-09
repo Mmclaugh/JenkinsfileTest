@@ -1,6 +1,9 @@
 pipeline{
     agent any
     stages{
+        stage ('Checkout'){
+            git branch: 'exampleBranch', url: 'https://github.com/Mmclaugh/JenkinsfileTest.git'
+        }
         stage('Selecte an Account') { 
             steps { 
                 echo "This is a second PR"

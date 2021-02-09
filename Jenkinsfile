@@ -22,6 +22,7 @@ pipeline{
                 echo "test"
                 echo "test"
                 echo "scrum test"
+                echo "another merge"
             } 
         }
     }

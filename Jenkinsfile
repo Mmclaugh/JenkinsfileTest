@@ -11,6 +11,7 @@ pipeline{
                 ])
                 
                 sh 'ls -la'
+                sh 'ls -la'
                 
                 sh 'ls -la subdirectory/*'
             }

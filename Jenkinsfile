@@ -20,6 +20,7 @@ pipeline{
                 echo "Adding a second output"
                 echo "This is a new edit on the PR"
                 echo "test"
+                echo "test"
             } 
         }
     }

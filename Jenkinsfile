@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage ('Checkout'){
             steps{
-                git branch: 'master', url: 'https://github.com/Mmclaugh/JenkinsfileTest.git'
+                echo "git branch: 'master', url: 'https://github.com/Mmclaugh/JenkinsfileTest.git'"
             }
         }
         stage('Selecte an Account') { 

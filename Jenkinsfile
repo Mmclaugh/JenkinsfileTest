@@ -2,7 +2,9 @@ pipeline{
     agent any
     stages{
         stage ('Checkout'){
-            git branch: 'master', url: 'https://github.com/Mmclaugh/JenkinsfileTest.git'
+            steps{
+                git branch: 'master', url: 'https://github.com/Mmclaugh/JenkinsfileTest.git'
+            }
         }
         stage('Selecte an Account') { 
             steps { 

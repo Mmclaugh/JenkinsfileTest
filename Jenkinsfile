@@ -11,6 +11,7 @@ pipeline{
                 echo "This is a second PR"
                 echo "this is a test"
                 echo "this should trigger a webhook build"
+                echo "this time only the push should be sent"
             } 
         }
         stage('A second stage') { 

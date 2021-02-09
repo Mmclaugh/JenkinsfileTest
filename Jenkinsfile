@@ -18,6 +18,7 @@ pipeline{
             steps { 
                 echo "this is a test"
                 echo "Adding a second output"
+                echo "This is a new edit on the PR"
             } 
         }
     }

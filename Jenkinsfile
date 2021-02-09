@@ -10,6 +10,7 @@ pipeline{
             steps { 
                 echo "This is a second PR"
                 echo "this is a test"
+                echo "this should trigger a webhook build"
             } 
         }
         stage('A second stage') { 

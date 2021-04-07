@@ -13,7 +13,6 @@ pipeline{
                         [$class: 'GitLFSPull']
                         ],
                         gitTool: gitTool])
-                        }
             }
         }
         stage('Selecte an Account') { 

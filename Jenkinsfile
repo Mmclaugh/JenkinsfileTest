@@ -1,7 +1,7 @@
 pipeline{
     agent any
     triggers {
-        pollSCM '0 0 31 2 *'
+        GenericTrigger causeString: 'Generic Cause', regexpFilterExpression: '', regexpFilterText: '', token: ''
     }
     stages{
         stage ('Checkout'){

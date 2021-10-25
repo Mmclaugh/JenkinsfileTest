@@ -1,7 +1,7 @@
 pipeline{
     agent any
     triggers {
-        GenericTrigger causeString: 'Generic Cause', regexpFilterExpression: '', regexpFilterText: '', token: ''
+        cron '* * * * *'
     }
     stages{
         stage ('Checkout'){

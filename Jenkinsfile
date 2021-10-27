@@ -1,16 +1,10 @@
-properties([pipelineTriggers([cron('H * * * *')])])
+properties([pipelineTriggers([pollSCM('H * * * *')])])
 
 node {
-    stage('Selecte an Account') { 
-        steps { 
-            echo "This is a second PR"
-            echo "this is a test"
-        } 
+    stage('Stage 1') { 
+        echo "This is the stage doing something"
     }
-    stage('A second stage') { 
-        steps { 
-            echo "this is a test"
-            echo "Adding a second output"
-        } 
+    stage('Stage 2') { 
+        echo "This is a test output"
     }
 }

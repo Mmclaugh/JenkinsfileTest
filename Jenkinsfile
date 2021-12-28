@@ -5,6 +5,7 @@ pipeline{
             steps{
                 echo "git branch: 'master', url: 'https://github.com/Mmclaugh/JenkinsfileTest.git'"
                 checkout scm
+                echo "pwd"
             }
         }
         stage('Selecte an Account') { 

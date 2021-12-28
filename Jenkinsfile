@@ -3,11 +3,14 @@ pipeline{
     stages{
         stage ('Checkout'){
             steps{
+                sh "du -sh"
                 echo "git branch: 'master', url: 'https://github.com/Mmclaugh/JenkinsfileTest.git'"
                 checkout scm
                 sh "pwd"
                 sh "ls -la"
                 sh "du -sh"
+                sh "rm -rf *"
+                sh "rm -rf .git/"
             }
         }
         stage('Selecte an Account') { 

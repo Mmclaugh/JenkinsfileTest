@@ -4,15 +4,7 @@ pipeline{
         stage ('Checkout'){
             steps{
                 echo "git branch: 'master', url: 'https://github.com/Mmclaugh/JenkinsfileTest.git'"
-                checkout([$class: 'GitSCM',
-                    branches : scm.branches,
-                        userRemoteConfigs: scm.userRemoteConfigs,
-                    extensions : scm.extensions + [
-                        [$class: 'SubmoduleOption', disableSubmodules: false, parentCredentials: true, recursiveSubmodules: true, reference: '', trackingSubmodules: false],
-                        [$class: 'CloneOption', noTags: false, depth: 0, reference: '', shallow: false],
-                        [$class: 'GitLFSPull']
-                        ],
-                        gitTool: gitTool])
+                checkout scm
             }
         }
         stage('Selecte an Account') { 

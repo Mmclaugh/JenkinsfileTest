@@ -9,8 +9,11 @@ pipeline{
                 sh "pwd"
                 sh "ls -la"
                 sh "du -sh"
+                echo "cleaning up"
                 sh "rm -rf *"
                 sh "rm -rf .git/"
+                echo "verifying cleanup"
+                sh "du -sh"
             }
         }
         stage('Selecte an Account') { 
